@@ -645,10 +645,10 @@ public class MainActivity extends Activity
 
     private void showSettingsNew() {
         Dialog d = showPopup(R.layout.dialog_new);
-        WebView myWebView = (WebView) d.findViewById(R.id.new_releases_webview);
-        myWebView.getSettings().setDomStorageEnabled(true);
-        myWebView.getSettings().setJavaScriptEnabled(true);
-        myWebView.loadUrl("https://www.oculus.com/experiences/quest/section/2735199833461641/");
+        WebView newReleases = (WebView) d.findViewById(R.id.new_releases_webview);
+        newReleases.getSettings().setDomStorageEnabled(true);
+        newReleases.getSettings().setJavaScriptEnabled(true);
+        newReleases.loadUrl("https://www.oculus.com/experiences/quest/section/2735199833461641/");
     }
 
     private int getPixelFromDip(int dip) {
